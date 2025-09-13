@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import { Truck, Car, Bus, Bike } from "lucide-react";
 
 
+
 function Fleet() {
     const rentalFleet = [
         {

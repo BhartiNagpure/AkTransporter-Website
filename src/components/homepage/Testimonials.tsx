@@ -7,7 +7,7 @@ const testimonials = [
         role: "Business Owner",
         feedback:
             "AK Transporter has been our trusted logistics partner. Always on time and reliable. Highly recommend their services!",
-        rating: 5,
+        rating: 6,
     },
     {
         name: "Anita Sharma",
@@ -21,13 +21,13 @@ const testimonials = [
         role: "Manufacturer",
         feedback:
             "Safe, secure, and affordable transport. Their fleet is well-maintained, and the staff is very cooperative.",
-        rating: 5,
+        rating: 7,
     },
 ];
 
  function Testimonials() {
     return (
-        <section id="testimonial" className="py-16 bg-gray-50">
+        <section id="testimonial" className="pt-16 bg-gray-50">
             <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
                 {/* Heading */}
                 <motion.h2

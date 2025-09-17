@@ -4,6 +4,7 @@ import Aboutcomponent from '../components/homepage/About'
 import Services from '../components/homepage/Services'
 import Testimonials from '../components/homepage/Testimonials'
 import Fleet from '../components/homepage/Fleet'
+import WhyUs from '../components/homepage/Whyus'
 
 function Homepage() {
   return (

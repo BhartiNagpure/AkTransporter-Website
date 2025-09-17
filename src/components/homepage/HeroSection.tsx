@@ -1,11 +1,16 @@
-
+import { useState } from "react";
 import { motion } from "framer-motion";
 import truckimg from '../../assets/truckimg.webp';
 import truckbgimg from '../../assets/truckbg.avif';
 import carimg from '../../assets/carimg.jpg';
+import QuoteForm from "../globalcomponents/Qouteform";
+import { useNavigate } from "react-router-dom";
 
 export default function HeroSection() {
+  const [qouteModel, setQoutemodel] = useState(false)
+  const navigate = useNavigate()
   return (
+    <>
     <section className="relative bg-[#0A2540] text-white min-h-screen flex items-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
@@ -37,18 +42,18 @@ export default function HeroSection() {
 
           {/* Buttons */}
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a
-              href="/quote"
+            <button
+            onClick={()=> setQoutemodel(true)}
               className="bg-[#FF6B00] hover:bg-[#e85d00] text-white px-6 py-3 rounded-xl font-poppins font-medium shadow-lg transition-all"
             >
               Get a Quote
-            </a>
-            <a
-              href="/services"
+            </button>
+            <button
+              onClick={()=>navigate("/services")}
               className="bg-white text-[#0A2540] hover:bg-gray-100 px-6 py-3 rounded-xl font-poppins font-medium shadow-lg transition-all"
             >
               Our Services
-            </a>
+            </button>
           </div>
         </motion.div>
 
@@ -67,5 +72,7 @@ export default function HeroSection() {
         </motion.div>
       </div>
     </section>
+    <QuoteForm isOpen={qouteModel} onClose={()=> setQoutemodel(false)}/>
+    </>
   );
 }

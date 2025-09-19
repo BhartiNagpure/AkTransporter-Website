@@ -51,7 +51,7 @@ export default function ServicesSection() {
                 </motion.p>
 
                 {/* Cards Grid */}
-              <ServiceCard services={services }/>
+                <ServiceCard services={services} />
             </div>
         </section>
     );

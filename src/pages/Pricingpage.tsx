@@ -43,7 +43,6 @@ export default function PricingPage() {
         },
     ];
 
-
     const title = "Pricing"
     return (
         <section >

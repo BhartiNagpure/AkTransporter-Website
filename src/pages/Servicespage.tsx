@@ -1,11 +1,13 @@
 import React from 'react'
 import ServiceCard from '../components/globalcomponents/ServiceCard';
-import { Truck, Package, Warehouse, Clock } from "lucide-react";
+import { Truck, Package, Warehouse, Clock, Subtitles } from "lucide-react";
 import { motion } from 'framer-motion'
 import BannerSection from '../components/globalcomponents/BannerSection';
 
 function Servicespage() {
     const title = "Services"
+
+
     const services = [
         {
             icon: <Truck className="w-10 h-10 text-[#FF6B00]" />,
@@ -53,7 +55,6 @@ function Servicespage() {
         <div>
             <BannerSection title={title} />
             <div className='max-w-7xl mx-auto px-6 lg:px-12 text-center py-4'>
-
                 <ServiceCard services={services} />
             </div>
         </div>
